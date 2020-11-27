@@ -13,9 +13,9 @@ const tambahan = require("./lib/tambahan.js")
 const donasi = require("./lib/donasi.js");
 const info = require("./lib/info.js");
 /////////////////
-const BotName = 'REUZ BOT☄'; 
-const instagram = 'https://instagram.com/reuz.id'; 
-const telegram = 'https://t.me/reuzzz'; 
+const BotName = 'AnggA Bot☄'; 
+const instagram = 'https://instagram.com/Angga020'; 
+const telegram = 'https://t.me/Angga'; 
 const kapanbotaktif = 'KETIKA HANYA DIAKTIFKAN'; 
 const youtube = 'https://www.youtube.com/c/reuz_id';
 //const grupch1 = 'belum ada grup'; 
@@ -64,11 +64,11 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@reuz.id')
+conn.on('user-presence-update', json => console.log(json.id + ' presence is => ' + json.type)) || console.log('Bot by ig:@Angga020')
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@reuz.id`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] => bot by ig:@Angga020`)
 })
 
 conn.on('message-new', async(m) =>
